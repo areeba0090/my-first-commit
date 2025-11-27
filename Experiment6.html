@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Product Page</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <style>
+            *{
+    box-sizing: border-box; margin: 0; padding: 0; font-family:Arial; 
+}
+body { background: #f7f8fb; color: #111; padding: 20px }
+.site-header {
+    display: block;
+    background: #222;
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+    margin-bottom: 18px;
+}
+.container { max-width: 420px; margin: 0 auto; }
+.product-card{
+    background: #fff;
+    border: 1px solid #e0e4ef;
+    padding: 12px;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+.product-title {
+    font-size: 18px;
+    margin: 8px;
+    font-weight: bold;
+}
+.product-desc {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+    margin: 8px;
+}
+.price-row {
+    margin-bottom: 10px;
+    margin: 8px;
+}
+.price-row .price {
+    color: green;
+    font-weight: bold;
+    margin-right: 8px;
+}
+.price-row .old-price {
+    color: #999;
+    text-decoration: line-through;
+}
+.add-cart {
+    background-color: #007bff;
+    width: 100%;
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+        </style>
+        <body>
+<header class="site-header">
+    <h1>ShopEasy</h1>
+</header>      
+<main class="container">
+<section class="product-card">
+    <img src="tshirt.png" alt="Classic Cotton T-shirt" class="product-image">
+    <h2 class="product-title">Classic Cotton T-Shirt</h2>
+    <p class="product-desc">Soft, breathable cotton, Regular Fit. Available in multiple colours.</p>
+    <div class="price-row">
+        <span class="price">₹799</span>
+        <span class="old-price">₹1,199</span>
+    </div>
+    <button class="add-cart">Add to Cart</button>
+</section>
+</main>
+  </body>
+</html>
