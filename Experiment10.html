@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Product Page</title>
+ <link rel="stylesheet" href="style.css">
+ </head>
+<style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #111;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.actions {
+    display: flex;
+    gap: 15px;
+    color: white;
+}
+
+.detail {
+    padding:20px;
+}
+
+/* --------------- MOBILE VERSION --------------- */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        width: 100%;
+        flex-direction: column;
+        background: #111;
+        padding: 15px 0;
+        gap: 15px;
+        text-align:center;
+    }
+
+    .actions {
+        position:absolute;
+        right:20px;
+        top:12px;
+    }
+    .detail {
+        display:none;
+    }
+
+</style>
+
+<body>
+
+<div class="navbar">
+    <div class="logo">ShopEase</div>
+
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Deals</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <div class="actions">
+        <span>Cart</span>
+        <span>Login</span>
+    </div>
+</div>
+
+
+    <div class="detail">
+    <h2>Welcome to ShopEase!</h2>
+    <p>Your one-stop destination for all shopping need.</p>
+    </div>
+
+</body>
+</html>

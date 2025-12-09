@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>grid</title>
+    </head>
+    <style>
+    .container {
+        display: grid;
+        grid-template-columns:repeat(4,1fr);
+        grid-template-rows:auto auto auto;
+        grid-template-areas:
+        "header header header header"
+        "main main empty sidebar"
+        "footer footer footer footer";
+        margin:10px auto;
+        width:90%;
+       
+    }
+    .header {
+        grid-area:header;
+        background:#FFA745;
+        text-align: center;
+        border-radius:10px;
+        padding:30px;
+    }
+    .main {
+        grid-area: main;
+        background:#5DBAF7;
+        text-align: center;
+        border-radius:10px;
+        padding:30px;
+    }
+    .empty {
+        grid-area:empty;
+        background:white;
+        text-align: center;
+        border-radius:10px;
+        padding:30px;
+    }
+    .sidebar {
+        grid-area:sidebar;
+        background:#dc4141;
+        text-align: center;
+        border-radius: 10px;
+        padding:30px;
+    }
+    .footer {
+        grid-area:footer;
+        background:lightgreen;
+        text-align: center;
+        border-radius: 10px;
+        padding:30px;
+    }
+    </style>
+    <body>
+        <div class="container">
+            <div class="header">Header</div>
+            <div class="main">Main</div>
+            <div class="sidebar">Sidebar</div>
+            <div class="empty">Empty</div>
+            <div class="footer">Footer</div>
+        </div>
+    </body>
+</html>
