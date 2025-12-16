@@ -48,6 +48,15 @@ body {
     gap: 15px;
     color: white;
 }
+#menu-btn {
+    display: none;
+}
+.menu-icon {
+
+    display:none;
+    font-size: 26px;
+    cursor:pointer;
+}
 
 .detail {
    
@@ -68,6 +77,15 @@ body {
         gap: 15px;
         text-align:center;
     }
+    .menu-icon {
+        display:block;
+        gap:9px;
+        margin-top:-30px;
+        margin-left:300px;
+    }
+    #menu-btn:checked~.nav-links {
+        max-height:500px;
+    }
 
     .actions {
         position:absolute;
@@ -84,6 +102,8 @@ body {
 
 <div class="navbar">
     <div class="logo">ShopEase</div>
+    <input type="checkbox" id="menu-btn">
+    <label for="menu-btn" class="menu-icon">≡</label>
 
     <ul class="nav-links">
         <li><a href="#">Home</a></li>

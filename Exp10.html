@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.actions {
+    display: flex;
+    gap: 20px;
+}
+
+#menu-btn {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+@media(max-width: 768px) {
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: #111;
+        text-align: center;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.4s ease;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menu-btn:checked ~ .nav-links {
+        max-height: 300px;
+    }
+
+    .actions {
+        position: absolute;
+        right: 20px;
+        top: 12px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+
+    <div class="logo">ShopEase</div>
+
+    <input type="checkbox" id="menu-btn">
+    <label for="menu-btn" class="menu-icon">☰</label>
+
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Categories</a>
+        <a href="#">Deals</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="actions">
+        <span>Cart 🛒</span>
+        <span>Login</span>
+    </div>
+
+</div>
+
+<div style="padding:20px;">
+    <h2>Welcome to ShopEase!</h2>
+    <p>Your one-stop destination for all shopping needs.</p>
+</div>
+
+</body>
+</html>
